@@ -1,0 +1,12 @@
+{
+  "name": "smooth-scroll-animation",
+  "version": "1.0.0",
+  "description": "Ultra-smooth scroll-based canvas frame animation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["canvas", "scroll-animation", "lerp", "portfolio"],
+  "author": "",
+  "license": "ISC"
+}
