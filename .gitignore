@@ -1,6 +1,3 @@
-# Ignore redundant large zip archive
-video_frames_30fps.zip
-
 # Logs and dependencies
 node_modules/
 npm-debug.log*
