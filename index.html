@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh Chahal — Software Developer & Systems Engineer</title>
+  <meta name="description"
+    content="Portfolio of Harsh Chahal, Software Developer building algorithm-driven systems, full-stack applications, and clean, purposeful code.">
+
+  <!-- Google Fonts: Playfair Display, Pinyon Script, Plus Jakarta Sans, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cur" aria-hidden="true"></div>
+  <div id="cur2" aria-hidden="true"></div>
+
+  <!-- Preloader Screen -->
+  <div id="loader" class="loader-overlay" aria-live="polite">
+    <div class="loader-content">
+      <div class="loader-brand">HARSH CHAHAL.</div>
+      <div class="progress-bar-wrapper">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <div class="progress-meta">
+        <span id="progress-text" class="progress-text">Loading 0%</span>
+        <span id="frame-counter" class="frame-counter">0 / 192 frames</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Scroll Animation Canvas Viewport -->
+  <div class="canvas-viewport" aria-hidden="true">
+    <canvas id="hero-canvas"></canvas>
+    <div class="canvas-overlay"></div>
+  </div>
+
+  <!-- Floating Scroll Indicator -->
+  <div id="scroll-indicator" class="scroll-indicator" aria-hidden="true">
+    <span class="scroll-label">Scroll to explore</span>
+    <div class="scroll-mouse">
+      <div class="scroll-wheel"></div>
+    </div>
+  </div>
+
+  <!-- Main Portfolio Content Layer -->
+  <div class="portfolio-container">
+
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="nav-item left">
+        <span class="nav-symbol">☰</span> HARSH CHAHAL.
+        <span class="nav-role-badge">SOFTWARE &amp; SYSTEMS DEVELOPER</span>
+      </div>
+      <div class="nav-center-links">
+        <a href="#projects" class="nav-anchor">Projects</a>
+        <a href="#toolbox" class="nav-anchor">Toolbox</a>
+        <a href="#contact" class="nav-anchor">Contact</a>
+      </div>
+      <div class="nav-item right">
+        <div class="status-live">
+          <span class="status-pulse"></span>
+          <span class="status-label">OPEN FOR ROLES</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <h1 class="hero-title">PORTFOLIO</h1>
+
+      <div class="hero-content-grid">
+        <!-- Left Hero Column -->
+        <div class="hero-col left">
+          <div class="hero-tagline-wrapper">
+            <p class="hero-tagline">
+              BUILDING <span id="typed" class="typed-text">SOFTWARE</span> SYSTEMS THAT SCALE &amp; PERFORM
+            </p>
+          </div>
+
+          <a href="#contact" class="btn-pill">
+            <span class="status-pulse"></span>
+            AVAILABLE FOR INTERNSHIPS &amp; COLLABS
+            <span class="sparkle">✦</span>
+          </a>
+
+          <div class="hero-signature">Harsh Chahal</div>
+        </div>
+
+        <!-- Center Opening (Lets background video frame character shine through) -->
+        <div class="hero-col center">
+          <div class="hero-visual-window"></div>
+        </div>
+
+        <!-- Right Hero Column -->
+        <div class="hero-col right">
+          <p class="hero-bio">
+            Harsh Chahal builds algorithm-driven systems, full-stack applications, and clean, purposeful code —
+            <strong>fast, structured, and reliable.</strong>
+          </p>
+          <p class="hero-academic">
+            Graphic Era University, Dehradun<br>
+            <strong>B.Tech (CSE)</strong> · 2024 – 2028 · <strong>8.3 CGPA</strong>
+          </p>
+          <div class="hero-location">
+            <div class="location-text">
+              <span>BASED IN DEHRADUN</span>
+              <strong>WORKING WORLDWIDE</strong>
+            </div>
+            <div class="globe-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="section-header">
+        <h2 class="section-title">SELECTED WORK <span class="sparkle">✦</span></h2>
+        <a href="#contact" class="view-all-link">EXPLORE CODE ON GITHUB <span class="arrow">⟶</span></a>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project Card 01: Handy -->
+        <article class="project-card">
+          <div class="card-meta">
+            <span class="project-num">01</span>
+            <div class="project-heading">
+              <h3 class="project-name">HANDY</h3>
+              <span class="project-cat">Full-Stack Web Dev · Marketplace</span>
+            </div>
+          </div>
+          <div class="project-preview">
+            <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=800&q=80"
+              alt="Handy Platform Mockup" class="project-img" loading="lazy">
+            <div class="preview-overlay">
+              <span class="preview-tagline">Local Worker Platform<br>&amp; Live Chat</span>
+            </div>
+          </div>
+          <p class="card-desc">
+            Full-stack marketplace with role-based auth, worker verification workflows, live booking management, and
+            bidirectional real-time Socket.io messaging.
+          </p>
+          <div class="project-tags">
+            <span class="tag">NODE.JS</span>
+            <span class="tag">NEXT.JS</span>
+            <span class="tag">MONGODB</span>
+            <span class="tag">SOCKET.IO</span>
+            <span class="tag">JWT</span>
+          </div>
+        </article>
+
+        <!-- Project Card 02: Virtual Memory Manager -->
+        <article class="project-card">
+          <div class="card-meta">
+            <span class="project-num">02</span>
+            <div class="project-heading">
+              <h3 class="project-name">VIRTUAL MEMORY</h3>
+              <span class="project-cat">Systems Programming &amp; OS</span>
+            </div>
+          </div>
+          <div class="project-preview">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+              alt="Virtual Memory Manager Mockup" class="project-img" loading="lazy">
+            <div class="preview-overlay">
+              <span class="preview-tagline">Paging &amp; Page<br>Replacement Policies</span>
+            </div>
+          </div>
+          <p class="card-desc">
+            Linux virtual memory management simulation implementing FIFO, LRU, and Clock policies. Benchmarks memory
+            usage trade-offs and page fault frequencies.
+          </p>
+          <div class="project-tags">
+            <span class="tag">C</span>
+            <span class="tag">LINUX</span>
+            <span class="tag">SYSTEMS</span>
+            <span class="tag">FIFO/LRU/CLOCK</span>
+          </div>
+        </article>
+
+        <!-- Project Card 03: Pac-Man AI -->
+        <article class="project-card">
+          <div class="card-meta">
+            <span class="project-num">03</span>
+            <div class="project-heading">
+              <h3 class="project-name">PAC-MAN AI</h3>
+              <span class="project-cat">Algorithms &amp; DAA</span>
+            </div>
+          </div>
+          <div class="project-preview">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80"
+              alt="Pac-Man AI Mockup" class="project-img" loading="lazy">
+            <div class="preview-overlay">
+              <span class="preview-tagline">Dijkstra's Pathfinding<br>&amp; 30% Speedup</span>
+            </div>
+          </div>
+          <p class="card-desc">
+            DAA-driven ghost movement powered by Dijkstra's shortest-path algorithm, priority queues, and hashing. Cut
+            path computation time by 30% across 10+ test maps.
+          </p>
+          <div class="project-tags">
+            <span class="tag">C++</span>
+            <span class="tag">DIJKSTRA'S</span>
+            <span class="tag">DP</span>
+            <span class="tag">HASHING</span>
+            <span class="tag">GRAPH ALGO</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Secondary Projects Row -->
+      <div class="projects-secondary-grid">
+        <div class="secondary-project-card">
+          <div class="sec-proj-header">
+            <span class="sec-num">04</span>
+            <span class="sec-title">DEEP PACKET INSPECTION</span>
+            <span class="sec-badge">Networking &amp; Security</span>
+          </div>
+          <p class="sec-desc">
+            C++ packet analyzer parsing raw PCAP files, Ethernet, IPv4, TCP/UDP headers. Extracts TLS Client Hello &amp;
+            SNI to classify traffic across YouTube, Google, Netflix, and Amazon.
+          </p>
+          <div class="project-tags">
+            <span class="tag">C++</span>
+            <span class="tag">PCAP</span>
+            <span class="tag">TLS / SNI</span>
+            <span class="tag">5-TUPLE ANALYSIS</span>
+          </div>
+        </div>
+
+        <div class="secondary-project-card">
+          <div class="sec-num-wrap">
+            <span class="sec-num">05</span>
+            <span class="sec-title">REAL-TIME STOCK SIMULATION</span>
+            <span class="sec-badge">Backend &amp; Concurrency</span>
+          </div>
+          <p class="sec-desc">
+            Multi-threaded Java trading system simulating dynamic stock price fluctuations in real time across
+            background threads with 10+ concurrent stock updates.
+          </p>
+          <div class="project-tags">
+            <span class="tag">JAVA</span>
+            <span class="tag">MULTITHREADING</span>
+            <span class="tag">CONCURRENCY</span>
+            <span class="tag">SYSTEM DESIGN</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process & Tools Section -->
+    <section class="process-tools-section" id="toolbox">
+      <div class="process-tools-grid">
+
+        <!-- Left: My Process -->
+        <div class="process-box">
+          <h2 class="sub-section-title">ENGINEERING PROCESS <span class="sparkle">✦</span></h2>
+          <div class="process-steps">
+            <div class="step-item">
+              <span class="step-num">01</span>
+              <div class="step-info">
+                <h4>DISCOVER &amp; SCOPE</h4>
+                <p>Deconstruct problem constraints, analyze edge cases, and define goals.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <span class="step-num">02</span>
+              <div class="step-info">
+                <h4>ARCHITECT &amp; MODEL</h4>
+                <p>Choose the optimal data structures, schema designs, and algorithmic paradigms.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <span class="step-num">03</span>
+              <div class="step-info">
+                <h4>IMPLEMENT</h4>
+                <p>Write clean, structured, modular code in C++, Java, or modern TypeScript/Node.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <span class="step-num">04</span>
+              <div class="step-info">
+                <h4>BENCHMARK &amp; REFINE</h4>
+                <p>Profile performance, eliminate memory bottlenecks, and optimize runtime complexity.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <span class="step-num">05</span>
+              <div class="step-info">
+                <h4>SHIP &amp; VERIFY</h4>
+                <p>End-to-end testing, clean documentation, and robust deployment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: Artwork Centerpiece -->
+        <div class="artwork-box">
+          <div class="artwork-inner">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
+              alt="Aesthetic motif" class="artwork-img" loading="lazy">
+            <p class="artwork-quote">“Fast, structured, and reliable code built with mathematical intention.”</p>
+          </div>
+        </div>
+
+        <!-- Right: Toolbox I Use -->
+        <div class="tools-box">
+          <h2 class="sub-section-title">CORE TOOLBOX <span class="sparkle">✦</span></h2>
+          <div class="tools-grid">
+            <div class="tool-card">
+              <span class="tool-icon">C++</span>
+              <div class="tool-text">
+                <span class="tool-name">C++</span>
+                <span class="tool-desc">DSA &amp; Algo</span>
+              </div>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">C</span>
+              <div class="tool-text">
+                <span class="tool-name">C</span>
+                <span class="tool-desc">Systems &amp; OS</span>
+              </div>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">Jv</span>
+              <div class="tool-text">
+                <span class="tool-name">JAVA</span>
+                <span class="tool-desc">Backend &amp; Concurrency</span>
+              </div>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">Py</span>
+              <div class="tool-text">
+                <span class="tool-name">PYTHON</span>
+                <span class="tool-desc">Scripting &amp; Logic</span>
+              </div>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">Js</span>
+              <div class="tool-text">
+                <span class="tool-name">JAVASCRIPT</span>
+                <span class="tool-desc">Frontend &amp; Async</span>
+              </div>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">Nd</span>
+              <div class="tool-text">
+                <span class="tool-name">NODE.JS</span>
+                <span class="tool-desc">REST APIs &amp; Sockets</span>
+              </div>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">Tw</span>
+              <div class="tool-text">
+                <span class="tool-name">TAILWIND</span>
+                <span class="tool-desc">Modern UI Layouts</span>
+              </div>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">Mo</span>
+              <div class="tool-text">
+                <span class="tool-name">MONGODB</span>
+                <span class="tool-desc">NoSQL &amp; Aggregations</span>
+              </div>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">Pg</span>
+              <div class="tool-text">
+                <span class="tool-name">POSTGRES</span>
+                <span class="tool-desc">Relational &amp; ACID</span>
+              </div>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">Rd</span>
+              <div class="tool-text">
+                <span class="tool-name">REDIS</span>
+                <span class="tool-desc">Caching &amp; Queues</span>
+              </div>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">Aw</span>
+              <div class="tool-text">
+                <span class="tool-name">AWS</span>
+                <span class="tool-desc">Cloud Infrastructure</span>
+              </div>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">My</span>
+              <div class="tool-text">
+                <span class="tool-name">MYSQL</span>
+                <span class="tool-desc">Database Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="tools-footer">&amp; LINUX, GIT, DOCKER, REST APIS</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Key Highlights / Kind Words Section -->
+    <section class="testimonials-section" id="highlights">
+      <div class="section-header">
+        <h2 class="section-title">ENGINEERING HIGHLIGHTS <span class="sparkle">✦</span></h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Highlight 01 -->
+        <div class="testimonial-card">
+          <div class="quote-symbol">“</div>
+          <p class="testimonial-text">
+            Strong algorithmic foundation with graph traversal and dynamic programming optimizations, cutting
+            pathfinding runtime by 30% in competitive scenarios.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar-badge">8.3</div>
+            <div class="author-details">
+              <span class="author-name">GRAPHIC ERA UNIVERSITY</span>
+              <span class="author-role">B.TECH (CSE) · 8.3 CGPA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Highlight 02 -->
+        <div class="testimonial-card">
+          <div class="quote-symbol">“</div>
+          <p class="testimonial-text">
+            Hands-on systems programming in C and Linux internals, implementing kernel-level concepts like virtual
+            memory paging and cache replacement policies.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar-badge">OS</div>
+            <div class="author-details">
+              <span class="author-name">SYSTEMS ARCHITECTURE</span>
+              <span class="author-role">MEMORY &amp; CONCURRENCY</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Highlight 03 -->
+        <div class="testimonial-card">
+          <div class="quote-symbol">“</div>
+          <p class="testimonial-text">
+            Production-grade full-stack systems with JWT authentication, Socket.io bidirectional streams, and
+            microservice-ready MongoDB architectures.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar-badge">WEB</div>
+            <div class="author-details">
+              <span class="author-name">FULL-STACK PLATFORMS</span>
+              <span class="author-role">MVC &amp; REAL-TIME SYSTEMS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & CTA Section -->
+    <section class="cta-section" id="contact">
+      <div class="cta-grid">
+
+        <!-- Left: Statement -->
+        <div class="cta-col left">
+          <span class="cta-kicker">LET'S BUILD SOMETHING</span>
+          <span class="cta-amazing">Amazing</span>
+        </div>
+
+        <!-- Middle: Action -->
+        <div class="cta-col middle">
+          <h3 class="cta-availability">OPEN TO INTERNSHIPS &amp; COLLABORATIONS</h3>
+          <p class="cta-description">Available for software engineering internships, open-source builds, and high-impact
+            problems worth solving.</p>
+          <a href="mailto:harshchahal7889@gmail.com" class="btn-pill btn-message">
+            SEND ME A MESSAGE <span class="sparkle">✦</span>
+          </a>
+        </div>
+
+        <!-- Right: Links -->
+        <div class="cta-col right">
+          <a href="tel:+919682308292" class="contact-link">
+            <span class="contact-icon">📞</span>
+            <span>+91 96823 08292</span>
+          </a>
+          <a href="mailto:harshchahal7889@gmail.com" class="contact-link">
+            <span class="contact-icon">✉️</span>
+            <span>harshchahal7889@gmail.com</span>
+          </a>
+          <a href="https://github.com/harshchahal7889" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-icon">🐙</span>
+            <span>GITHUB: harshchahal7889</span>
+          </a>
+          <a href="https://www.linkedin.com/in/harsh-chahal-0b033526a" target="_blank" rel="noopener noreferrer"
+            class="contact-link">
+            <span class="contact-icon">🔗</span>
+            <span>LINKEDIN: harshchahal</span>
+          </a>
+          <div class="contact-link static">
+            <span class="contact-icon">📍</span>
+            <span>DEHRADUN, INDIA</span>
+          </div>
+        </div>
+
+        <!-- Far Right: Portrait Photo -->
+        <div class="cta-col portrait">
+          <div class="portrait-card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Harsh Chahal" class="portrait-img" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>HARSH CHAHAL © 2026 · BUILT WITH INTENTION <span class="sparkle">✦</span></span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
