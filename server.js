@@ -14,7 +14,8 @@ const MIME_TYPES = {
   '.svg': 'image/svg+xml',
   '.ico': 'image/x-icon',
   '.woff2': 'font/woff2',
-  '.woff': 'font/woff'
+  '.woff': 'font/woff',
+  '.zip': 'application/zip'
 };
 
 const server = http.createServer((req, res) => {
@@ -45,11 +46,11 @@ const server = http.createServer((req, res) => {
       'Access-Control-Allow-Origin': '*'
     };
 
-    if (ext === '.jpg' || ext === '.png') {
-      headers['Cache-Control'] = 'public, max-age=3600';
-    } else {
-      headers['Cache-Control'] = 'no-cache';
-    }
+  if (ext === '.jpg' || ext === '.png' || ext === '.zip') {
+  headers['Cache-Control'] = 'public, max-age=31536000, immutable';
+} else {
+  headers['Cache-Control'] = 'no-cache';
+}
 
     res.writeHead(200, headers);
     fs.createReadStream(safePath).pipe(res);
