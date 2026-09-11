@@ -1,12 +1,20 @@
 {
-  "name": "smooth-scroll-animation",
-  "version": "1.0.0",
-  "description": "Ultra-smooth scroll-based canvas frame animation",
+  "name": "harsh-chahal-portfolio",
+  "version": "2.0.0",
+  "description": "Ultra-smooth ZIP-based scroll frame animation portfolio for Harsh Chahal",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
-  "keywords": ["canvas", "scroll-animation", "lerp", "portfolio"],
-  "author": "",
+  "keywords": [
+    "canvas",
+    "scroll-animation",
+    "lerp",
+    "zip-streaming",
+    "portfolio",
+    "creatives"
+  ],
+  "author": "Harsh Chahal",
   "license": "ISC"
 }
